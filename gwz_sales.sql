@@ -1,6 +1,7 @@
 SELECT
-  date_date AS gun,
-  SUM(turnover) AS daily_endorsement
+  date_date,
+  SUM(turnover) AS turnover,
+  SUM(purchase_cost) AS purchase_cost
 FROM
   `data-analytics-469406.course14.gwz_sales`
 GROUP BY
